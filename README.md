@@ -17,6 +17,8 @@ The project allows users to:
 ## 🏗️ Project Architecture
 
 The system is organized into core components and flows:
+<img width="1536" height="814" alt="ChatGPT Image Sep 30, 2025, 06_32_02 PM" src="https://github.com/user-attachments/assets/5225eda3-4859-4ecc-964e-a66d6bf56ff1" />
+
 
 ### 🔹 Core Components
 - **API (FastAPI backend)**  

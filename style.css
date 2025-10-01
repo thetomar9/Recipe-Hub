@@ -1,0 +1,110 @@
+/* Basic Reset and Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background for the whole page */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #e74c3c; /* A warm, inviting red */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Main Content and Layout */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    /* Grid layout for displaying recipe cards */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Recipe Card Styling */
+.recipe-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card h2 {
+    color: #c0392b; /* A slightly darker red for headings */
+    margin-top: 0;
+    border-bottom: 2px solid #f39c12; /* A yellow/orange accent line */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+    color: #2c3e50; /* Dark blue/grey for subheadings */
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.recipe-card .description {
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.recipe-card ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0;
+}
+
+.recipe-card ul li:before {
+    content: "✔️"; /* Custom bullet point */
+    margin-right: 8px;
+    color: #27ae60; /* Green checkmark */
+}
+
+/* Button Styling */
+.view-recipe-btn {
+    display: inline-block;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.view-recipe-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #333;
+    color: #ecf0f1;
+    font-size: 0.9em;
+}
